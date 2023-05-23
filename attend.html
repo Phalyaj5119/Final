@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Attendance Punch-In System</title>
+  <style>
+    *{
+        border: 0px;
+        margin: 0px;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    header {
+	background-color: #02052f;
+	color: #fff;
+	padding: 20px;
+        }
+    
+    h1 {
+      color: #ffffff;
+    }
+    
+    .container {
+      margin-top: 50px;
+    }
+    
+    .button {
+      width: 500px;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      margin-left: 330px;
+    }
+    .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+  margin-left: 300px;
+  height: 100px;
+  margin-left: 150px;
+  }
+  form {
+  background-color: #3133a5c2;
+  width: 500px;
+  height: 40%;
+  padding: 20px;
+  border-radius: 10px;
+  align-items: left;
+  margin-left: 300px;
+  
+ }
+ input[type="text"], input[type="password"] {
+  width: 500px;
+  padding: 12px 20px;
+  margin: 6px 0;
+  display: inline-block;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+  outline: none;
+  border-color: #000000;
+}
+  </style>
+</head>
+<body>
+    <header>
+        <br>
+        <br>
+        <center><h1>MedNow Punch-In</h1></center>
+            <br>
+        </header>
+        <br>
+        <br>
+        <br>
+  <h1>Attendance Punch-In System</h1>
+  <div class="container">
+    <form action="">
+      <h2>ATTENDANCE</h2>
+      <b><label>Employee Name</label></b>
+      <br>
+      <br>
+      <input type="text" placeholder="name" name="name" required>
+      <br>
+      <b><label>Arrival/Leave Time<label></b>
+      <input type="time" placeholder="Time" name="arrival time" required>
+      <br>
+      <br>
+    </form>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="container">
+    <button class="button" onclick="punchIn()">Punch In</button>
+    <button class="button" onclick="punchOut()">Punch Out</button>
+  </div>
+  
+  <script>
+    function punchIn() {
+      var currentTime = new Date();
+      var punchInTime = currentTime.toLocaleTimeString();
+      alert("Punched In at: " + punchInTime);
+    }
+    
+    function punchOut() {
+      var currentTime = new Date();
+      var punchOutTime = currentTime.toLocaleTimeString();
+      alert("Punched Out at: " + punchOutTime);
+    }
+  </script>
+</body>
+</html>

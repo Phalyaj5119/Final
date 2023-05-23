@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MedNow</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* Reset default browser styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Set styles for the header */
+header {
+	background-color: #02052f;
+	color: #fff;
+	padding: 20px;
+}
+
+header h1 {
+	margin: 0;
+	font-size: 36px;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav ul li {
+	margin-right: 20px;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Set styles for the main content */
+main {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+section {
+	margin-bottom: 40px;
+}
+
+section h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+section ul {
+	list-style-type: disc;
+	margin-left: 20px;
+}
+
+/* Set styles for the footer */
+footer {
+	background-color: #eee;
+	color: #333;
+	padding: 20px;
+	text-align: center;
+}
+#floating-button {
+			display: block;
+            margin: 0 auto;
+		}
+
+		#floating-button img {
+			display: block;
+			width: 350px;
+			height: 350px;
+			border-radius: 50%;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+			transition: all 0.3s ease-in-out;
+			
+		}
+
+		#floating-button img:hover {
+			transform: scale(1.1);
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+		}
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	size:30cm;
+}
+
+
+</style>
+<body>
+	<header>
+	<center><h1>Welcome to MedNow</h1></center>
+        <br>
+		<nav>
+			<ul>
+				<li><a href="pract.html">Home</a></li>
+				<li><a href="shift1.html">Manage Shifts</a></li>
+				<li><a href="hospital2.html">Login</a></li>
+				<li><a href="#">Contact</a></li>
+                <li><a href="#">Help</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<h2>Hello Warriors !</h2>
+			<p>Marking your presence has never been easier.
+			   Go ahead and let us know if u are ready to live another day as a warrior!</p>
+			</section>
+        <a id="floating-button" href="shift1.html">
+        <img src="medical4.jpg" alt="Floating Button">
+		</a>
+		<br>
+		<center><b><p>VIEW SHIFTS</p></b></center>
+		<br>
+		<br>
+		<a id="floating-button" href="hospital2.html">
+		<img src="medical3.jpg">
+		</a>
+		<br>
+		<center><b><p>ATTENDANCE</p></b></center>
+		<br>
+		<br>
+		<a id="floating-button" href="hospital3.html">
+		<img src="phone.png">
+		</a>
+		<br>
+		<center><b><p>ASSOCCIATION CONTACT INFO</p></b></center>
+    <br>
+    <br>
+    <br>
+    <br>
+	</main>
+	<footer>
+		<p>&copy; 2023 My Website. All rights reserved.</p>
+	</footer>
+</body>
+</html>
